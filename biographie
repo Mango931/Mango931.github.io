@@ -9,7 +9,7 @@
  <body>
    <script src="script.js"></script>
  
-   <h1> Ma bibliographie </h1>
+   <h1 id="bibliographie"> Ma bibliographie </h1>
    <!--Table de matiere-->
    <ul>
      <li><a href="#moi">Quelque information sur moi</a>
