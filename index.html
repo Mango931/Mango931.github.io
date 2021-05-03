@@ -8,15 +8,19 @@
  </head>
  <style>
      body {
-       background-color: #d4d4d4;
+       background-color: grey;
        text-align: center;
        font-family: cursive;
        list-style-position: inside;
        border: 10px ridge #4F1B1D;
        margin: 0px 25% 0px 25%;
-       padding: 0px 100px 0px 100px;
+       padding: 0px;
        color: black;
      }
+    .bod{
+      padding: 10px 100px 10px 100px;
+      background-color: #f2f2f2;
+    }
      #photo_moi {
        border: 15px ridge #4F1B1D;
      }
@@ -24,8 +28,10 @@
  <body>
    <script src="script.js"></script>
  
-   <h1 id="biographie"> Ma bibliographie </h1>
+   <h1> Ma biographie - Samuel Marchetti</h1>
    <!--Table de matiere-->
+   <div class="bod">
+   <h3>Table de matière</h3>
    <ul>
      <li><a href="#moi">Quelques informations sur moi</a>
      <li><a href="#ambition">Mes ambitions, mes rêves, ma future carrière</a>
@@ -35,8 +41,8 @@
    <!--ajoute une espace-->
    <h1></h1>
    <!--Voici une photo de moi-->
-   <img alt="Une photo de moi" id="photo_moi" src="https://scontent.fybz1-1.fna.fbcdn.net/v/t1.6435-9/179933421_295293955454731_7507025110949120559_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=730e14&_nc_ohc=6OzELCLf36IAX_L3SSR&_nc_oc=AQlMi7q1tDy0ls_7T4ACeyll2MbbLo5Ch1BQEW3zmLDj9MDzWJJ291RsEeoeu2Cmi4Y&_nc_ht=scontent.fybz1-1.fna&oh=9554a1c54c6a6c1661410c741e039810&oe=60AFB041" width="200"> 
-  <div id="info_sur_moi">
+   <img alt="Une photo de moi" id="photo_moi" src="https://scontent.fybz1-1.fna.fbcdn.net/v/t1.6435-9/179933421_295293955454731_7507025110949120559_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=730e14&_nc_ohc=6OzELCLf36IAX_L3SSR&_nc_oc=AQlMi7q1tDy0ls_7T4ACeyll2MbbLo5Ch1BQEW3zmLDj9MDzWJJ291RsEeoeu2Cmi4Y&_nc_ht=scontent.fybz1-1.fna&oh=9554a1c54c6a6c1661410c741e039810&oe=60AFB041" width="200">
+
    <h2 id="moi">Quelque information sur moi</h2>
      <p>Je m'appelle <strong>Samuel Marchetti</strong>. Je suis un étudiant du secondaire a l'école  <em>Paul-desmarais</em>. Mes passe-temps préférés sont les sports comme le hockey, le soccer, le ski nautique et les jeux vidéo en ligne. Je suis quelqu'un de très compétitif et énergétique qui explique pourquoi j'aime tellement ses passe-temps. J'aime aussi jouer de la musique. Je peux jouer au saxophone et au piano.</p>
   
@@ -75,14 +81,12 @@
                </tr>
            </tbody>
     </table>
-
+    </div>
     <h2>Mes autres pages web</h2>
     <ol>
       <li><a href="poem.html">Mon poem</a>
       <li><a href="voyage">Mon voyage</a>
-</div>
-
-       
+    </ol>
  </body>
 </html>
 
