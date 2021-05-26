@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script>
+      function horoscope() {
+        var annee = prompt ("Quelle annee etes vous nee?");
+        var jour = prompt ("Quelle jour etes vous nee?");
+        var mois = prompt ("Quelle mois etes vous nee?");
+
+        var dob = new Date(annee,mois,jour);
+        var date = dob.getDate();
+        var month = dob.getMonth()-1;
+        var sign = "sign";
+
+        switch (month) {
+          case (0):
+            if (date < 20) {sign = "Capricorn"} 
+            else {sign = "Verseau"}
+            break;
+          case (1):
+            if (date < 19) {sign = "Verseau"} 
+            else {sign = "Poissons"}
+            break;
+          case (2):
+            if (date < 21) {sign = "Poissons"} 
+            else {sign = "Belier"}
+            break;
+          case (3):
+            if (date < 20) {sign = "Belier"} 
+            else {sign = "Taureau"}
+            break;
+          case (4):
+            if (date < 21) {sign = "Taureau"} 
+            else {sign = "Gemeaux"}
+            break;
+          case (5):
+            if (date < 22) {sign = "Gemeaux"} 
+            else {sign = "Cancer"}
+            break;
+          case (6):
+            if (date < 23){sign = "Cancer"} 
+            else {sign = "Lion"}
+            break;
+          case (7):
+            if (date < 23) {sign = "Lion"} 
+            else {sign = "Vierge"}
+            break;
+          case (8):
+            if (date < 23) {sign = "Vierge"} 
+            else {sign = "Balance"}
+            break;
+          case (9):
+            if (date < 24) {sign = "Balance"} 
+            else {sign = "Scorpion"}
+            break;
+          case (10):
+            if (date < 22) {sign = "scorpion" } 
+            else {sign = "Sagittaire"}
+            break;
+          case (11):
+            if (date < 22){sign = "Sagittaire"} 
+            else {sign = "Capricorne"}
+            break;
+          default:
+        }
+        document.write ("<p>"+ sign +"</p>")
+      }
+    </script>
+
+    <h1>Voici le troisieme code</h1>
+    <a onclick="horoscope();"><u>Clicker pour activer le code</u></a>
+  </body>
+</html>
