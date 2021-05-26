@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Voici mon code de motif</h1>
+    <script>
+      var rep = parseInt(prompt("Quel forme voulez vous?"));
+      var forme = "";
+
+      if (rep == 1) {
+        for (let i = 1; i <= 10; i++) {
+          forme = "";
+          for(let j = 1; j <= i; j++) {
+            forme = forme + "*";
+          }
+          document.write (forme + "<br>")
+        }   
+      } 
+      else if (rep == 2) {
+        for (let i = 1; i <= 10; i++) {
+          forme = "";
+          for(let j = i; j <= 10; j++) {
+            forme = forme + "*";
+          }
+          document.write (forme + "<br>")
+        }   
+      } 
+      else if (rep == 3) {
+        for (let i = 0; i <= 10; i++) {
+          forme = ""
+          for(let j = 1; j <= i; j++) {
+            forme = forme + "&nbsp;&nbsp;";
+          }
+          for(let j = i; j <= 10; j++) {
+            forme = forme + "*";
+          }
+          document.write (forme + "<br>")
+        }   
+      } 
+      else if (rep == 4) {
+        for (let i = 0; i <= 10; i++) {
+          forme = "";
+          for(let j = i; j <= 10; j++) {
+            forme = forme + "&nbsp;&nbsp;";
+          }
+          for(let j = 1; j <= i; j++) {
+            forme = forme + "*";
+          }
+          document.write (forme + "<br>")
+        }   
+      }
+    </script>
+
+  </body>
+</html>
